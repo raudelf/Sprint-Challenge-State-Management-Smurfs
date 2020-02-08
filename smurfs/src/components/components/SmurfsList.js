@@ -5,8 +5,13 @@ const SmurfsList = props => {
     return (
         <div className='smurfContainer'>
         {props.error ? (<div className='error'>{props.error}</div>) : (
-            props.smurfs.map(smurf => {
-                return (<h1>{smurf.name}</h1>)
+            props.smurfs.map((smurf, index) => {
+                return (
+                    <div className='smurfBox' key={index}>
+                        <h3>{smurf.name}</h3>
+                        <p><b>Age:</b> {smurf.age}</p>
+                        <p><b>Height:</b> {smurf.height}</p>
+                    </div>)
             })
         )}
         </div>
