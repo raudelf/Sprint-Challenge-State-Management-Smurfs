@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 const SmurfsList = props => {
     return (
         <div className='smurfContainer'>
-        {props.error ? (<div className='error'>{props.error}</div>) : (
+        {props.error ? (<h3 className='error'>{props.error}</h3>) : (
             props.smurfs.map((smurf, index) => {
                 return (
                     <div className='smurfBox' key={index}>

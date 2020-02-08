@@ -9,8 +9,8 @@ const SmurfBtn = props => {
     }
 
     return (
-        <div className='formContainer'>
-            {props.isFetching ? (<h2 className='fetchText'>Loading Smurfs...</h2>) : (<button onClick={handleGetSmurf}>Load Smurfs</button>)}
+        <div className='loadContainer'>
+            {props.isFetching ? (<h2 className='fetchText'>Loading Smurfs...</h2>) : (<button className='loadBtn btn' onClick={handleGetSmurf}>Load Smurfs</button>)}
         </div>
     )
 }
