@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 900px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -25,4 +27,61 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+/* Buttons & Forms*/
+
+.loadContainer {
+  width: 100%;
+  margin: 3% 0;
+}
+
+.error {
+  color: #F06449;
+}
+
+.btn {
+  border: none;
+  background-color: #F2F4F3;
+  color: #555B6E;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formHeader {
+  text-align: left;
+}
+
+.formContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 26%;
+  height: 30px
+}
+
+input::placeholder {
+  color: #555B6E;
+  font-size: 18px;
+}
+
+/* Smurf List */
+
+.smurfContainer {
+  width: 100%;
+  margin: 3% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.smurfBox {
+  background-color: #F2F4F3;
+  color: #555B6E;
+  width: 30%;
+  margin: 2% 0;
 }
