@@ -13,7 +13,8 @@ export const smurfReducer = (state = initialState, action) => {
             return {
                 ...state,
                 smurfs: [],
-                isFetching: true
+                isFetching: true,
+                error: ''
             }
         case UPDATE_SMURFS :
             return {
