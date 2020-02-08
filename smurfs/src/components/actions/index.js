@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { bindActionCreators } from 'redux';
 
 // Actions
 export const FETCH_SMURFS = 'FETCH_SMURFS';
@@ -37,5 +36,5 @@ export const postSmurfs = smurfs => dispatch => {
                 console.log('Actions > postSmurfs > Error: ', err);
                 dispatch({ type: ERROR, payload: 'There was an issue submitting your Smurf'})
             })
-    })
+    }, 2000)
 }
